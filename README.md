@@ -9,6 +9,7 @@ Furthermore, SMS spam is rapidly on the rise, with the Federal Trade Commision r
 My capstone project aims to create an ML model that is capable of detecting spam SMS messages.
 
 I will be utilizing a public set of 5,574 SMS messages in English from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection#) that have been collected for mobile phone spam research. The tagging standard was defined as **ham** (legitimate) or **spam**.
+
 Here are some examples:
 `ham What you doing?how are you?`
 `ham dun say so early hor... U c already then say...`
@@ -26,7 +27,8 @@ TO-DO
 ## Credits
 
 Acknowledgements: 
-The SMS Spam dataset used can be found at: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection#). 
+The SMS Spam dataset used can be found at: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection#).
+
 The creators of the dataset's previous paper and [web page](http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/).
 
 ## License
