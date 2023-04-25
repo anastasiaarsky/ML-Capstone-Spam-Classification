@@ -1,6 +1,6 @@
 ### 1. Datasets Explored
 
-*Note: the "ham" label means that the message was legitimate*
+*Note: the "ham" label means that the message was legitimate*.  
 There are a couple publicly available Spam Email datasets:
 
 ###### i. [Enron Spam dataset](https://www2.aueb.gr/users/ion/data/enron-spam/)
@@ -10,7 +10,7 @@ The original dataset is structured so that each email is contained in a separate
 
 ###### ii. [SpamAssassin dataset](https://spamassassin.apache.org/old/publiccorpus/)
 This dataset contains the raw text, like the Enron dataset. And just like the Enron dataset, the SpamAssassin dataset contains multiple directories, each containing the raw text files:  
--`easy-ham-1`: easier to detect non-spam e-mails (2500 messages) 
+-`easy-ham-1`: easier to detect non-spam e-mails (2500 messages)   
 -`easy-ham-2`: easier to detect non-spam e-mails collected at a later date (1400 messages)  
 -`hard-ham-1`: harder to detect non-spam e-mails (250 messages)   
 -`spam-1`: spam e-mails (500 messages)    
@@ -27,7 +27,8 @@ I will not be using the data set as I prefer the ones that actually contain the 
 ### 2. Code for Data Collection
 
 My code can be found at DataCollection.py.  
-What it does:
+
+What it does: 
 1. Processes the raw data from the [SpamAssassin dataset](https://spamassassin.apache.org/old/publiccorpus/) into a pandas dataframe
 2. Updates the SpamAssassin dataframe to include the Enron Spam data from [MWiechmann's GitHub repository](https://github.com/MWiechmann/enron_spam_data)
 3. Ouputs a CSV file of the merged data
