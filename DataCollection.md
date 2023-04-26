@@ -16,7 +16,7 @@ This dataset contains the raw text, like the Enron dataset. And just like the En
 -`hard-ham-1`: harder to detect non-spam e-mails (250 messages)   
 -`spam-1`: spam e-mails (500 messages)    
 -`spam-2`: spam e-mails collected at a later date (1397 messages)  
-There are a total of 6,407 messages, with 4,150 labeled as ham and 1,897 labeled as spam. 
+There are a total of 6,047 messages, with 4,150 labeled as ham and 1,897 labeled as spam. 
 
 I was able to find the dataset (excluding `hard-ham-1`) as a CSV file online at [Kaggle](https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset). However, if I want to use the complete dataset, so I will need to write a script to process the raw data. This [notebook](https://www.kaggle.com/code/cesaber/getting-started-in-spam-classification?scriptVersionId=122108078) will guide me in converting the raw SpamAssassin files to CSV files.
 
