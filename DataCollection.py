@@ -15,19 +15,17 @@ spam_path = '/Users/anastasiaarsky/PycharmProjects/ML_Capstone/CapstoneData/Spam
 # reads the raw email data and returns a dataframe
 def read_emails(path, spam):
     files = os.listdir(path)
-    if spam:
-        df = pd.DataFrame(
-            data={'Subject': np.zeros(len(files)), 'Message': np.zeros(len(files)), 'Label': np.ones(len(files))})
-    else:
-        df = pd.DataFrame(
-            data={'Subject': np.zeros(len(files)), 'Message': np.zeros(len(files)), 'Label': np.zeros(len(files))})
+    df = pd.DataFrame(columns=['Subject', 'Message', 'Label'])
     for i in range(len(files)):
         with open(path + files[i], 'rb') as content:
             cont = content.read()
             subject = BytesParser(policy=default).parsebytes(cont)['Subject']
             message = BytesParser(policy=default).parsebytes(cont).get_payload()
         content.close()
-        df['Message'][i], df['Subject'][i] = message, subject
+        if spam:
+            df.loc[len(df.index)] = [subject, message, 1]
+        else:
+            df.loc[len(df.index)] = [subject, message, 0]
     return df
 
 
@@ -36,12 +34,17 @@ def read_emails(path, spam):
 ham_df = read_emails(ham_path, False)
 hard_ham_df = read_emails(hard_ham_path, False)
 spam_df = read_emails(spam_path, True)
+print(len(ham_df), 3900)
+print(len(hard_ham_df), 250)
+print(len(spam_df), 1897)
 
 # Concatenate the previous dataframes:
 # data = ham_df, spam_df
 # full_data = ham_df, spam_df, hard_ham_df
 data = pd.concat([ham_df, spam_df], axis=0, ignore_index=True)
 full_data = pd.concat([data, hard_ham_df], axis=0, ignore_index=True)
+print(len(data), 5797)
+print(len(full_data), 6047)
 
 # Part 2: Merge with Enron Spam data
 
@@ -52,10 +55,15 @@ enron_df = pd.read_csv('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/Capsto
 enron_df.rename(columns={'Spam/Ham': 'Label'}, inplace=True)
 enron_df['Label'] = enron_df['Label'].map({'spam': 1.0, 'ham': 0.0})
 enron_df = enron_df.drop(columns=['Message ID', 'Date'])
+print(len(enron_df), 33716)
+
 
 # Concatenate the SpamAssassin df to the enron dataframe
 data = pd.concat([data, enron_df], axis=0, ignore_index=True)
+print(len(data), 39513)
 full_data = pd.concat([full_data, enron_df], axis=0, ignore_index=True)
+print(len(full_data), 39763)
+
 
 # Step 3: Output to CSV file
 
