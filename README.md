@@ -10,15 +10,18 @@ My capstone project aims to create an ML model that is capable of detecting spam
 
 ## Data
 
-Data.csv contains two premade datasets: 
+[Data.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Data.csv) is made up of two premade datasets: 
 - [SpamAssassin dataset](https://spamassassin.apache.org/old/publiccorpus/)
 - [Enron Spam dataset](https://www2.aueb.gr/users/ion/data/enron-spam/)   
 
 Further dataset details can be found at: [DataCollection.md](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.md).
 
-The SpamAssassin dataset was intitailly structured so that each email was contained in a separate text file and distributed across multiple directories, so it had to first be processed for use. The Enron Spam dataset was structured similarly to the SpamAssassin dataset, but I was able to save some time by finding an already-processed CSV version of the data at [MWiechmann's GitHub repository](https://github.com/MWiechmann/enron_spam_data).
+[DataCollection.py](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.py) contains the script for processing the SpamAssassin dataset, as well as merging it with the Enron Spam dataset before outputting it as Data.csv.
 
-[DataCollection.py](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.py) contains the script for processing the SpamAssassin dataset, as well as merging it with the Enron Spam dataset before outputting it as Data.csv. 
+The dataset includes 39,513 entries, with 20,445 labeled as ham and 19,068 as spam. The dataset contains the following columns:
+- **Subject**: the subject of the email  
+- **Message**: the content of the email   
+- **Label**: whether the email was spam (1) or not (0)    
 
 ## Credits
 
