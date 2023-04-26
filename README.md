@@ -10,7 +10,8 @@ My capstone project aims to create an ML model that is capable of detecting spam
 
 ## Data
 
-[Data.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Data.csv) includes 39,513 entries, with 20,445 labeled as ham and 19,068 as spam. The dataset contains the following columns:
+[Data.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Data.csv) includes 39,513 entries, with 20,445 labeled as ham and 19,068 as spam. 
+The dataset contains the following columns:
 | Column      | Description |
 | ----------- | ----------- |
 | **Subject**      | The subject line of the email        |
@@ -21,7 +22,7 @@ This dataset is made up of two premade datasets:
 - [SpamAssassin dataset](https://spamassassin.apache.org/old/publiccorpus/)
 - [Enron Spam dataset](https://www2.aueb.gr/users/ion/data/enron-spam/)   
 
-Further dataset details can be found at: [DataCollection.md](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.md).
+Further details about these two datasets can be found at: [DataCollection.md](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.md).
 
 [DataCollection.py](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.py) contains the script for processing the SpamAssassin dataset, as well as merging it with the Enron Spam dataset before outputting it as Data.csv.   
 
