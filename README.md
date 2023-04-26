@@ -10,7 +10,7 @@ My capstone project aims to create an ML model that is capable of detecting spam
 
 ## Data
 
-[Data.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Data.csv) includes 39,513 entries, with 20,445 labeled as ham and 19,068 as spam. 
+[Data.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Data.csv) includes 39,513 entries, with 20,445 labeled as ham and 19,068 as spam.    
 The dataset contains the following columns:
 | Column      | Description |
 | ----------- | ----------- |
