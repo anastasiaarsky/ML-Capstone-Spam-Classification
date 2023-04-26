@@ -11,9 +11,11 @@ My capstone project aims to create an ML model that is capable of detecting spam
 ## Data
 
 [Data.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Data.csv) includes 39,513 entries, with 20,445 labeled as ham and 19,068 as spam. The dataset contains the following columns:
-- **Subject**: the subject of the email  
-- **Message**: the content of the email   
-- **Label**: whether the email was spam (1) or not (0)  
+| Column      | Description |
+| ----------- | ----------- |
+| **Subject**      | The subject line of the email        |
+| **Message**   | The content of the e-mail. Can contain an empty string if the message had only a subject line and no body. In case of forwarded emails or replies, this also contains the original message with subject line, "from:", "to:", etc.        |
+| **Label**   | Whether the email was spam (1) or not (0)          |
  
 This dataset is made up of two premade datasets: 
 - [SpamAssassin dataset](https://spamassassin.apache.org/old/publiccorpus/)
