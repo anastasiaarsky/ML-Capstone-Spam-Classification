@@ -1,6 +1,7 @@
 I used **Amazon Comprehend** (a cloud NLP service) to benchmark my model. 
 
 **Set Up:**
+
 The AI service was fairly easy to set up as I am familiar with AWS:
 1. First, I uploaded my data as a CSV file into an AWS S3 bucket (ensuring that it had the correct formatting: two columns total, where the first column is the label and the second is the email subject line + message). 
   a. Code for the reformatting of the CSV files can be found here: DataManipulationForComprehend.py 
