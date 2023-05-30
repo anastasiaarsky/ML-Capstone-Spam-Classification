@@ -64,7 +64,6 @@ print(len(data), 39513)
 full_data = pd.concat([full_data, enron_df], axis=0, ignore_index=True)
 print(len(full_data), 39763)
 
-
 # Step 3: Output to CSV file
 
 # Data.csv contain all data except hard_spam
