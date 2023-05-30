@@ -16,7 +16,7 @@ The AI service was fairly easy to set up as I am familiar with AWS:
     
     c. Training dataset: path to CSV file in the S3 bucket I made in step 1
     
-    d. Test dataset: Autosplit 
+    d. Test dataset: Autosplit (Comprehend selects 10% of your provided training data to use as testing data)
 
 3. I also created a new IAM role so that my Classifier Model could access the S3 bucket that the Training data was in
 
