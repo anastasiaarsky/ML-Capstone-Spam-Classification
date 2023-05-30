@@ -1,6 +1,6 @@
-I used **Amazon Comprehend** (a cloud NLP service) to benchmark my model. 
+### I used **Amazon Comprehend** (a cloud NLP service) to benchmark my model. 
 
-**Set Up:**
+### **Set Up:**
 
 The AI service was fairly easy to set up as I am familiar with AWS:
 1. First, I uploaded my data as a CSV file into an AWS S3 bucket (ensuring that it had the correct formatting: two columns total, where the first column is the label and the second is the email subject line + message). 
@@ -18,7 +18,7 @@ The AI service was fairly easy to set up as I am familiar with AWS:
 
 3. I also created a new IAM role so that my Classifier Model could access the S3 bucket that the Training data was in
 
-**Results:**
+### **Results:**
 
 *Note: hard cases consist of 250 harder-to-detect non-spam emails*
 
