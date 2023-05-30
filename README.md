@@ -22,9 +22,9 @@ This dataset is made up of two premade datasets:
 - [SpamAssassin dataset](https://spamassassin.apache.org/old/publiccorpus/)
 - [Enron Spam dataset](https://www2.aueb.gr/users/ion/data/enron-spam/)   
 
-Further details about these two datasets can be found at: [DataCollection.md](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.md).
+Further details about these two datasets can be found at: [DataCollection.md](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection/DataCollection.md).
 
-[DataCollection.py](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection.py) contains the script for processing the SpamAssassin dataset, as well as merging it with the Enron Spam dataset before outputting it as Data.csv.   
+[DataCollection.py](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection/DataCollection.py) contains the script for processing the SpamAssassin dataset, as well as merging it with the Enron Spam dataset before outputting it as Data.csv.   
 
 ## Credits
 
