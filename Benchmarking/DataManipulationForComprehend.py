@@ -14,7 +14,7 @@ def reformatForComprehend(path, filename):
 
 
 # reformat Data.csv and export to ComprehendData.csv
-reformatForComprehend('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/Data.csv', 'ComprehendData.csv')
+reformatForComprehend('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/DataCollection/Data.csv', 'ComprehendData.csv')
 
 # reformat Full_data.csv and export to ComprehendFullData.csv
-reformatForComprehend('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/Full_data.csv', 'ComprehendFullData.csv')
+reformatForComprehend('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/DataCollection/Full_data.csv', 'ComprehendFullData.csv')
