@@ -36,4 +36,4 @@ What it does:
 
 ### 3. Actual Dataset
 
-The final dataset I will use will be the Enron Spam dataset merged with the Spam Assassin dataset. It can be found in the SpamData.csv file.
+The final dataset I will use will be the Enron Spam dataset merged with the Spam Assassin dataset. It can be found in the Data.csv file.
