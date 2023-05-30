@@ -26,10 +26,10 @@ Further details about these two datasets can be found at: [DataCollection.md](ht
 
 [DataCollection.py](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataCollection/DataCollection.py) contains the script for processing the SpamAssassin dataset, as well as merging it with the Enron Spam dataset before outputting it as Data.csv.   
 
-## Benchmarking My Model
+## Model Benchmarking
 
 I created a Custom Classifier Model in Amazon Comprehend in order to benchmark my model. After training, the model had an accuracy score of 0.99+ as well as an F1 score of 0.99+. 
 
 Further details can be found at: [ComprehendResults.md](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Benchmarking/ComprehendResults.md).
 
-TO-DO
+## TO-DO
