@@ -18,7 +18,7 @@ This dataset contains the raw text, like the Enron dataset. And just like the En
 -`spam-2`: spam e-mails collected at a later date (1397 messages)  
 There are a total of 6,047 messages, with 4,150 labeled as ham and 1,897 labeled as spam. 
 
-I was able to find the dataset (excluding `hard-ham-1`) as a CSV file online at [Kaggle](https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset). However, if I want to use the complete dataset, so I will need to write a script to process the raw data. This [notebook](https://www.kaggle.com/code/cesaber/getting-started-in-spam-classification?scriptVersionId=122108078) will guide me in converting the raw SpamAssassin files to CSV files.
+I was able to find the dataset (excluding `hard-ham-1`) as a CSV file online at [Kaggle](https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset). However, I want to use the complete dataset, so I will need to write a script to process the raw data. This [notebook](https://www.kaggle.com/code/cesaber/getting-started-in-spam-classification?scriptVersionId=122108078) will guide me in converting the raw SpamAssassin files to CSV files.
 
 ##### iii. [Spambase dataset](https://archive.ics.uci.edu/ml/datasets/spambase)
 Unlike the other two datasets, the Spambase data is contained in a single file and does not include the raw text of the messages. Instead, most of the attributes indicate whether a particular word or character was frequently occurring in the e-mail. There are 4,601 total messages, with 2,788 labeled as ham and 1,813 labeled as spam.  
@@ -36,4 +36,4 @@ What it does:
 
 ### 3. Actual Dataset
 
-The final dataset I will use will be the Enron Spam dataset merged with the Spam Assassin dataset. It can be found in the Data.csv file.
+The final dataset I will use will be the Enron Spam dataset merged with the Spam Assassin dataset.
