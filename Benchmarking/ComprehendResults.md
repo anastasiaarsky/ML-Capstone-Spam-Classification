@@ -30,7 +30,7 @@ The AI service was fairly easy to set up as I am familiar with AWS:
 
     <img src="DataResults.jpg" alt= "Data Results" width="50%" height="50%">
 
-2. For **Full_data.csv** (including hard cases), my model had an accuracy of 0.99+ and an F1 score of 0.99+. 
+2. For **FullData.csv** (including hard cases), my model had an accuracy of 0.99+ and an F1 score of 0.99+. 
 
     Full performance details:
 
