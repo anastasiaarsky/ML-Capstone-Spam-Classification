@@ -12,7 +12,7 @@ My full project proposal can be found at: [ProjectProposal.pdf](https://github.c
 
 ## Data
 
-[FullData.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/FullData.csv.zip) includes 39,763 entries, with 20,695 labeled as ham and 19,068 as spam.    
+[FullData.csv.zip](https://github.com/anastasiaarsky/ML_Capstone/blob/main/FullData.csv.zip) includes 39,763 entries, with 20,695 labeled as ham and 19,068 as spam.    
 The dataset contains the following columns:
 | Column      | Description |
 | ----------- | ----------- |
@@ -50,6 +50,8 @@ Next, my text preprocessing/normalization process was as follows:
 7. Remove non-ASCII characters
 
 I chose not to remove punctuation as I believed it to be important in the detection of Spam emails.
+
+The zipped version of my preprocessed data can be found here: [CleanData.csv.zip](https://github.com/anastasiaarsky/ML_Capstone/blob/main/CleanData.csv.zip).
 
 **Data exploration:**
 
