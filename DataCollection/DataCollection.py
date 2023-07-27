@@ -69,4 +69,4 @@ print(len(full_data), 39763)
 # Data.csv contain all data except hard_spam
 # Full_data.csv contains all data
 data.to_csv('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/Data.csv', index=False)
-full_data.to_csv('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/Full_data.csv', index=False)
+full_data.to_csv('/Users/anastasiaarsky/PycharmProjects/ML_Capstone/FullData.csv', index=False)
