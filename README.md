@@ -12,7 +12,7 @@ My full project proposal can be found at: [ProjectProposal.pdf](https://github.c
 
 ## Data
 
-[Data.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Data.csv) includes 39,513 entries, with 20,445 labeled as ham and 19,068 as spam.    
+[FullData.csv](https://github.com/anastasiaarsky/ML_Capstone/blob/main/FullData.csv.zip) includes 39,763 entries, with 20,695 labeled as ham and 19,068 as spam.    
 The dataset contains the following columns:
 | Column      | Description |
 | ----------- | ----------- |
@@ -34,4 +34,34 @@ I created a Custom Classifier Model in Amazon Comprehend in order to benchmark m
 
 Further details can be found at: [ComprehendResults.md](https://github.com/anastasiaarsky/ML_Capstone/blob/main/Benchmarking/ComprehendResults.md).
 
-## TO-DO
+## Data Wrangling & Exploration
+
+**Data Wrangling:**
+
+I first concatenated the Subject and Message columns of my data into a single column. 
+
+Next, my text preprocessing/normalization process was as follows:
+1. Transform each token to lower case
+2. Replace URLs with the string 'URL'
+3. Replace emails with the string 'email'
+4. Replace numbers with the string 'number'
+5. Remove any extra newlines or whitespace
+6. Remove stopwords
+7. Remove non-ASCII characters
+
+I chose not to remove punctuation as I believed it to be important in the detection of Spam emails.
+
+**Data exploration:**
+
+The key takeways were as follows:
+1. My dataset was fairly balanced: 52% ham to 48% spam.
+2. The most common tokens were numbers, punctuation, and emails as well as the words 'enron' , 'ect', 'company', and 'subject'.  
+a. Ham emails commonly featured emails and the words 'enron', 'subject', 'ect', and 'energy'.   
+b. Spam emails commonly featured urls and the words 'company', 'information', and 'font'.  
+3. The average email length was around 201 tokens, but the longest email contained 28,624 tokens.
+
+
+The Jupyter Notebook for this phase can be found here: [DataWrangling&Exploration.ipynb](https://github.com/anastasiaarsky/ML_Capstone/blob/main/DataWrangling%26Exploration.ipynb)
+
+## Reproduction of Available Solutions
+
